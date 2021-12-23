@@ -1,0 +1,47 @@
+{
+  "name": "sicovi-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "bootstrap": "^5.1.3",
+    "crypto-js": "^4.1.1",
+    "dateformat": "^5.0.2",
+    "http-proxy-middleware": "^2.0.1",
+    "js-base64": "^3.7.2",
+    "jstoxml": "^2.2.6",
+    "jszip": "^3.7.1",
+    "md5": "^2.3.0",
+    "ncrypt-js": "^2.0.0",
+    "react": "16.8.3",
+    "react-bootstrap": "^2.0.3",
+    "react-dom": "16.8.3",
+    "react-dropzone": "^11.4.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "2.1.5"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "proxy": "https://tr01.gepp.com",
+  "description": "��#\u0000 \u0000p\u0000l\u0000a\u0000t\u0000z\u0000i\u0000-\u0000b\u0000a\u0000d\u0000g\u0000e\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Jorge de la Rosa",
+  "license": "jalboros@"
+}

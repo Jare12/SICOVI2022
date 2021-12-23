@@ -1,0 +1,199 @@
+{
+    "viajes": [
+        [
+            {
+                "FolioGEPP": "874",
+                "FechaGeneracion": "2021-12-07T11:40:41",
+                "UsoCFDI": "03-Gastos"
+            },
+            {
+                "CartaPorte": {
+                    "Version": "2.0",
+                    "TranspInternac": "No",
+                    "TotalDistRec": 932,
+                    "Ubicaciones": {
+                        "Ubicacion": [
+                            {
+                                "TipoUbicacion": "Origen",
+                                "IDUbicacion": "OR107401",
+                                "RFCRemitenteDestinatario": "URE180429TM6",
+                                "FechaHoraSalidaLlegada": "2021-12-07T11:50:40",
+                                "Domicilio": {
+                                    "Estado": "DIF",
+                                    "Pais": "MEX",
+                                    "CodigoPostal": "08800"
+                                }
+                            },
+                            {
+                                "TipoUbicacion": "Destino",
+                                "IDUbicacion": "DE507501",
+                                "RFCRemitenteDestinatario": "XAXX010101000",
+                                "FechaHoraSalidaLlegada": "2021-12-08T18:54:02",
+                                "DistanciaRecorrida": 932,
+                                "Domicilio": {
+                                    "Estado": "NLE",
+                                    "Pais": "MEX",
+                                    "CodigoPostal": "66603"
+                                }
+                            }
+                        ]
+                    },
+                    "Mercancias": {
+                        "PesoBrutoTotal": "5004",
+                        "UnidadPeso": "KGM",
+                        "PesoNetoTotal": "5004",
+                        "NumTotalMercancias": 2,
+                        "Mercancia": [
+                            {
+                                "BienesTransp": "24112702",
+                                "Descripcion": "Tarimas de plástico",
+                                "Cantidad": "6",
+                                "ClaveUnidad": "H87",
+                                "Unidad": "Pieza",
+                                "PesoEnKg": "138"
+                            },
+                            {
+                                "BienesTransp": "50202306",
+                                "Descripcion": "Refrescos",
+                                "Cantidad": "360",
+                                "ClaveUnidad": "XBX",
+                                "Unidad": "Caja",
+                                "PesoEnKg": "4866"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "FolioGEPP": "873",
+                "FechaGeneracion": "2021-12-07T11:40:06",
+                "UsoCFDI": "03-Gastos"
+            },
+            {
+                "CartaPorte": {
+                    "Version": "2.0",
+                    "TranspInternac": "No",
+                    "TotalDistRec": 10,
+                    "Ubicaciones": {
+                        "Ubicacion": [
+                            {
+                                "TipoUbicacion": "Origen",
+                                "IDUbicacion": "OR107401",
+                                "RFCRemitenteDestinatario": "URE180429TM6",
+                                "FechaHoraSalidaLlegada": "2021-12-07T11:50:06",
+                                "Domicilio": {
+                                    "Estado": "DIF",
+                                    "Pais": "MEX",
+                                    "CodigoPostal": "08800"
+                                }
+                            },
+                            {
+                                "TipoUbicacion": "Destino",
+                                "IDUbicacion": "DE105502",
+                                "RFCRemitenteDestinatario": "XAXX010101000",
+                                "FechaHoraSalidaLlegada": "2021-12-07T12:10:16",
+                                "DistanciaRecorrida": 10,
+                                "Domicilio": {
+                                    "Estado": "DIF",
+                                    "Pais": "MEX",
+                                    "CodigoPostal": "01280"
+                                }
+                            }
+                        ]
+                    },
+                    "Mercancias": {
+                        "PesoBrutoTotal": "4058.2",
+                        "UnidadPeso": "KGM",
+                        "PesoNetoTotal": "4058.2",
+                        "NumTotalMercancias": 2,
+                        "Mercancia": [
+                            {
+                                "BienesTransp": "24112702",
+                                "Descripcion": "Tarimas de plástico",
+                                "Cantidad": "5",
+                                "ClaveUnidad": "H87",
+                                "Unidad": "Pieza",
+                                "PesoEnKg": "115"
+                            },
+                            {
+                                "BienesTransp": "50202306",
+                                "Descripcion": "Refrescos",
+                                "Cantidad": "240",
+                                "ClaveUnidad": "XBX",
+                                "Unidad": "Caja",
+                                "PesoEnKg": "3943.2"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "FolioGEPP": "872",
+                "FechaGeneracion": "2021-12-07T11:39:18",
+                "UsoCFDI": "03-Gastos"
+            },
+            {
+                "CartaPorte": {
+                    "Version": "2.0",
+                    "TranspInternac": "No",
+                    "TotalDistRec": 20,
+                    "Ubicaciones": {
+                        "Ubicacion": [
+                            {
+                                "TipoUbicacion": "Origen",
+                                "IDUbicacion": "OR107401",
+                                "RFCRemitenteDestinatario": "URE180429TM6",
+                                "FechaHoraSalidaLlegada": "2021-12-07T11:49:17",
+                                "Domicilio": {
+                                    "Estado": "DIF",
+                                    "Pais": "MEX",
+                                    "CodigoPostal": "08800"
+                                }
+                            },
+                            {
+                                "TipoUbicacion": "Destino",
+                                "IDUbicacion": "DE105202",
+                                "RFCRemitenteDestinatario": "XAXX010101000",
+                                "FechaHoraSalidaLlegada": "2021-12-07T12:29:36",
+                                "DistanciaRecorrida": 20,
+                                "Domicilio": {
+                                    "Estado": "MEX",
+                                    "Pais": "MEX",
+                                    "CodigoPostal": "55430"
+                                }
+                            }
+                        ]
+                    },
+                    "Mercancias": {
+                        "PesoBrutoTotal": "4058.2",
+                        "UnidadPeso": "KGM",
+                        "PesoNetoTotal": "4058.2",
+                        "NumTotalMercancias": 2,
+                        "Mercancia": [
+                            {
+                                "BienesTransp": "24112702",
+                                "Descripcion": "Tarimas de plástico",
+                                "Cantidad": "5",
+                                "ClaveUnidad": "H87",
+                                "Unidad": "Pieza",
+                                "PesoEnKg": "115"
+                            },
+                            {
+                                "BienesTransp": "50202306",
+                                "Descripcion": "Refrescos",
+                                "Cantidad": "240",
+                                "ClaveUnidad": "XBX",
+                                "Unidad": "Caja",
+                                "PesoEnKg": "3943.2"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    ]
+}

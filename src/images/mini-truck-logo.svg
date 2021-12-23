@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" id="svg2121" sodipodi:docname="camion.svg" viewBox="0 0 744.09 1052.4" sodipodi:version="0.32" sodipodi:docbase="/Volumes/PENDRIVE/docs/creaciones_propias/multimedia/imagen">
+ <sodipodi:namedview id="base" bordercolor="#666666" pagecolor="#ffffff" borderopacity="1.0"/>
+ <g id="layer1" fill-rule="evenodd">
+  <path id="path2176" sodipodi:rx="5.3571429" sodipodi:ry="5.3571429" sodipodi:type="arc" d="m224.29 314.86a5.3571 5.3571 0 1 1 -10.72 0 5.3571 5.3571 0 1 1 10.72 0z" transform="translate(36.786 -3.2143)" sodipodi:cy="314.86218" sodipodi:cx="218.92857"/>
+  <rect id="rect2172" height="33.929" width="97.5" y="271.29" x="244.64" fill="#bfc3bc"/>
+  <path id="path2174" d="m342.86 272.36l21.07 6.43 0.36 26.43h-21.43v-32.86z" fill="#00d"/>
+  <path id="path2178" sodipodi:rx="5.3571429" sodipodi:ry="5.3571429" sodipodi:type="arc" d="m224.29 314.86a5.3571 5.3571 0 1 1 -10.72 0 5.3571 5.3571 0 1 1 10.72 0z" transform="translate(50 -3.2143)" sodipodi:cy="314.86218" sodipodi:cx="218.92857"/>
+  <rect id="rect2908" height="2.8571" width="44.286" y="278.79" x="245.71" fill="#00d"/>
+  <rect id="rect2910" height="2.8571" width="73.214" y="283.79" x="245.71" fill="#00d"/>
+  <g id="g2922" transform="translate(0 -.71429)">
+   <path id="path2180" sodipodi:rx="5.3571429" sodipodi:ry="5.3571429" sodipodi:type="arc" d="m224.29 314.86a5.3571 5.3571 0 1 1 -10.72 0 5.3571 5.3571 0 1 1 10.72 0z" transform="translate(133.57 -2.8571)" sodipodi:cy="314.86218" sodipodi:cx="218.92857"/>
+   <path id="path2914" sodipodi:rx="2.1428571" sodipodi:ry="2.1428571" sodipodi:type="arc" d="m217.14 225.93a2.1429 2.1429 0 1 1 -4.28 0 2.1429 2.1429 0 1 1 4.28 0z" transform="translate(138.57 86.286)" sodipodi:cy="225.93361" sodipodi:cx="215.00000" fill="#787878"/>
+  </g>
+  <rect id="rect2916" height="13.571" width="5.7143" y="280.22" x="358.21" fill="#969696"/>
+  <path id="path2918" sodipodi:rx="2.1428571" sodipodi:ry="2.1428571" sodipodi:type="arc" d="m217.14 225.93a2.1429 2.1429 0 1 1 -4.28 0 2.1429 2.1429 0 1 1 4.28 0z" transform="translate(54.643 86.071)" sodipodi:cy="225.93361" sodipodi:cx="215.00000" fill="#787878"/>
+  <path id="path2920" sodipodi:rx="2.1428571" sodipodi:ry="2.1428571" sodipodi:type="arc" d="m217.14 225.93a2.1429 2.1429 0 1 1 -4.28 0 2.1429 2.1429 0 1 1 4.28 0z" transform="translate(41.071 87.143)" sodipodi:cy="225.93361" sodipodi:cx="215.00000" fill="#787878"/>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+    <dc:publisher>
+     <cc:Agent rdf:about="http://openclipart.org/">
+      <dc:title>Openclipart</dc:title>
+     </cc:Agent>
+    </dc:publisher>
+   </cc:Work>
+   <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+</svg>

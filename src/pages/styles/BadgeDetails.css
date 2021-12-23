@@ -1,0 +1,75 @@
+/** @format */
+
+.BadgeDetails__hero {
+	width: 100%;
+	padding: 2rem 0;
+	background: url('../../images/stars.svg'), #1b1b25;
+	background-repeat: repeat;
+	margin-bottom: 1rem;
+	color: #ffffff;
+}
+
+.BadgeDetails__hero-attendant-name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.BadgeDetails__buttons {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 1rem;
+}
+
+.BadgesListItem {
+	background: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+	border-radius: 5px;
+	display: flex;
+	padding: 1rem;
+}
+
+#containerJson {
+	max-height: 1100px;
+}
+
+#import-button-file {
+	margin-left: 1000px;
+}
+
+.lista-derecha {
+	/*text-align: right;*/
+	font-size: 22px;
+	color: mediumspringgreen;
+}
+
+.small-text {
+	font-size: 10px;
+}
+
+.padding-left-label {
+	padding-left: 40px;
+}
+
+h1 {
+	font-size: 1.5rem !important;
+	color: #535151 !important;
+}
+
+#tabla-mercancias {
+	text-align: center;
+}
+
+#label-url {
+	padding-left: 4rem;
+	text-align: right;
+}
+
+#uri-row {
+	margin-bottom: 10px;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+	background-color: white !important;
+}
