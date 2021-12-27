@@ -29,7 +29,6 @@ const ViajeDetailsContainer = (props) => {
 				({ FolioGEPP }) => FolioGEPP === props.match.params.viajeId
 			);
 
-			console.log('datos:', JSON.stringify(result));
 			setState({ ...state, loading: false, data: result });
 		} catch (error) {
 			setState({ ...state, loading: false, error: error });

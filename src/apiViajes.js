@@ -57,10 +57,6 @@ async function callApiViajes(endpoint, options = {}) {
 		listVijajes.push(JSON.parse(zipFile.readAsText(entry)));
 	});
 
-	// Output the all the values, including an input / output
-	// Node.js to see if the encrypted values match.
-	console.log('zipBase64: ', data.zipBase64);
-	console.log('decryptValB64: ', decryptValB64);
 	console.log('entriesFileZip:' + zipFileEntries.length);
 
 	return listVijajes;
@@ -70,8 +66,9 @@ async function encripcion(listFiles, files, url) {
 	//extract B64 from dataurl
 
 	let bufferData = null;
+	let base64Data = '';
 	if (listFiles.length > 0) {
-		let base64Data = listFiles[0].toString().split(',')[1];
+		base64Data = listFiles[0].toString().split(',')[1].toString();
 		bufferData = Buffer.from(base64Data, 'base64');
 	}
 
@@ -92,22 +89,19 @@ async function encripcion(listFiles, files, url) {
 			cipher.update(url, 'utf8', 'base64') + cipher.final('base64');
 	}
 
-	//convert bufferadata to binary data
-	//let binaryData = Buffer.from(listFiles[0]);
+	let cipherb64 = crypto.createCipheriv('AES-128-ECB', binaryEncryptKeyB64, '');
 
-	let encoded64 = '';
+	let encryptedZip = '';
 	if (bufferData != null && bufferData.length > 0) {
-		let encryptedZip = cipher.update(bufferData, 'binary');
-		encryptedZip += cipher.final('base64');
-		encoded64 = Buffer.from(encryptedZip, 'binary').toString('base64');
+		encryptedZip =
+			cipherb64.update(base64Data, 'utf8', 'base64') +
+			cipherb64.final('base64');
 	}
 
 	let encriptData = {
-		encryptedZip: encoded64,
+		encryptedZip: encryptedZip,
 		encryptedUrl: encryptedUrl,
 	};
-
-	console.log('encriptData: ', encriptData);
 
 	return encriptData;
 }
@@ -134,7 +128,6 @@ async function confirmar(encriptData, folio, options = {}) {
 		options
 	);
 	const data = await response.json();
-	console.log('data: ', data);
 
 	return data;
 }
