@@ -84,6 +84,7 @@ const BadgeDetails = ({ state }) => {
 
 	const { getInputProps, getRootProps } = useDropzone({
 		onDrop,
+		multiple: true,
 		accept: '.xml,.pdf,.json',
 		maxFiles: 2,
 	});
@@ -121,17 +122,7 @@ const BadgeDetails = ({ state }) => {
 
 					<div className='row'>
 						<div className='col-md-7'></div>
-						<div className='col-md-5'>
-							<div>
-								<div {...getRootProps()}>
-									<input {...getInputProps()} />
-									<p>
-										Arrastra y suelta tus archivos o haz click aquí para
-										seleccionarlos.
-									</p>
-								</div>
-							</div>
-						</div>
+						<div className='col-md-5'></div>
 					</div>
 					<div className='row'>
 						<div className='col-md-7'></div>
@@ -145,7 +136,16 @@ const BadgeDetails = ({ state }) => {
 					</div>
 					<div className='row'>
 						<div className='col-md-7'></div>
-						<div className='col-md-5'>
+						<div className='col-md-2'>
+							<div className=''>
+								<div {...getRootProps()}>
+									<input {...getInputProps()} />
+
+									<label className='btn btn-warning'>Adjuntar archivos</label>
+								</div>
+							</div>
+						</div>
+						<div className='col-md-3'>
 							{(files.length > 0 || url.length > 0) && (
 								<button
 									id='btn-guardar'
