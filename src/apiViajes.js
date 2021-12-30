@@ -62,14 +62,22 @@ async function callApiViajes(endpoint, options = {}) {
 	return listVijajes;
 }
 
-async function encripcion(listFiles, files, url) {
-	//extract B64 from dataurl
-
-	let bufferData = null;
+async function encripcion(listFiles, url) {
 	let base64Data = '';
-	if (listFiles.length > 0) {
-		base64Data = listFiles[0].toString().split(',')[1].toString();
-		bufferData = Buffer.from(base64Data, 'base64');
+	if (listFiles != null && listFiles.length > 0) {
+		let AdmZip = require('adm-zip');
+		let zipFile = new AdmZip();
+
+		//add files to zip
+		listFiles.forEach((file) => {
+			zipFile.addFile(file.name, file.array, 'Archivo adjunto por SICOVI');
+		});
+
+		//get zip entries
+		console.log('entriesNewFileZip:' + zipFile.getEntries().length);
+
+		//get zip as base64
+		base64Data = zipFile.toBuffer().toString('base64');
 	}
 
 	const crypto = require('crypto');
@@ -92,7 +100,7 @@ async function encripcion(listFiles, files, url) {
 	let cipherb64 = crypto.createCipheriv('AES-128-ECB', binaryEncryptKeyB64, '');
 
 	let encryptedZip = '';
-	if (bufferData != null && bufferData.length > 0) {
+	if (listFiles != null && listFiles.length > 0) {
 		encryptedZip =
 			cipherb64.update(base64Data, 'utf8', 'base64') +
 			cipherb64.final('base64');
@@ -137,8 +145,8 @@ const api = {
 		list() {
 			return callApiViajes('/viajes');
 		},
-		encripcion(listFiles, files, url) {
-			return encripcion(listFiles, files, url);
+		encripcion(listFiles, url) {
+			return encripcion(listFiles, url);
 		},
 		confirmar(encriptData, folio) {
 			return confirmar(encriptData, folio);

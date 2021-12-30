@@ -72,8 +72,6 @@ const BadgeDetails = ({ state }) => {
 
 	const onDrop = useCallback((acceptedFiles, fileRejections) => {
 		setfiles(acceptedFiles);
-		//alert(acceptedFiles[0].name);
-
 		//send alert for each file rejected
 		fileRejections.forEach((rejection) => {
 			alert(
@@ -86,9 +84,8 @@ const BadgeDetails = ({ state }) => {
 
 	const { getInputProps, getRootProps } = useDropzone({
 		onDrop,
-		accept:
-			'application/zip,application/octet-stream,application/x-zip-compressed,multipart/x-zip,.zip',
-		maxFiles: 1,
+		accept: '.xml,.pdf,.json',
+		maxFiles: 2,
 	});
 
 	return (
@@ -129,8 +126,8 @@ const BadgeDetails = ({ state }) => {
 								<div {...getRootProps()}>
 									<input {...getInputProps()} />
 									<p>
-										Arrastra y suelta tu Archvio ZIP o haz click aquí para
-										seleccionarlo.
+										Arrastra y suelta tus archivos o haz click aquí para
+										seleccionarlos.
 									</p>
 								</div>
 							</div>
@@ -727,9 +724,13 @@ const ConfirmModal = ({
 		try {
 			let listFiles = [];
 			for (let i = 0; i < files.length; i++) {
-				listFiles.push(await readFileAsync(files[i]));
+				listFiles.push({
+					name: files[i].name,
+					array: await readFileAsync(files[i]),
+				});
 			}
-			const data = await api.viajes.encripcion(listFiles, files, url);
+
+			const data = await api.viajes.encripcion(listFiles, url);
 			const response = await api.viajes.confirmar(data, folio);
 
 			setOpenModal(false);
@@ -751,20 +752,17 @@ const ConfirmModal = ({
 	};
 
 	function readFileAsync(file) {
-		//read file and decode to base64
 		return new Promise((resolve, reject) => {
 			const reader = new FileReader();
-			reader.onload = () => resolve(reader.result);
-			//reader.onload = function (event) {
 
-			//resolve(event.target.result);
-			//	var arrayBuffer = event.target.result;
-			//	var bytes = new Uint8Array(arrayBuffer);
-			//	resolve(bytes);
-			//};
+			reader.onload = function (event) {
+				var arrayBuffer = event.target.result;
+				var bytes = new Uint8Array(arrayBuffer);
+				resolve(bytes);
+			};
 			reader.onerror = (error) => reject(error);
-			reader.readAsDataURL(file);
-			//reader.readAsBinaryString(file);
+
+			reader.readAsArrayBuffer(file);
 		});
 	}
 
