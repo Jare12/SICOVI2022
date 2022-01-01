@@ -1,17 +1,25 @@
 /** @format */
 
 async function callApiViajes(endpoint, options = {}) {
-	options.headers = {
-		'Content-Type': 'application/json',
-		Accept: 'application/json',
-	};
+	//try catch
 
-	const response = await fetch(
-		//'/DEV-WSCartaPorte/rest/service/verViajes?wsUser=GEPP_CP&numProveedor=30-03-1161',
-		'/WSCartaPorte/rest/service/verViajes?wsUser=GEPP_CP&numProveedor=30-03-1161',
-		options
-	);
-	const data = await response.json();
+	let data;
+	try {
+		options.headers = {
+			'Content-Type': 'application/json',
+			Accept: 'application/json',
+		};
+
+		const response = await fetch(
+			//'/DEV-WSCartaPorte/rest/service/verViajes?wsUser=GEPP_CP&numProveedor=30-03-1161',
+			'/WSCartaPorte/rest/service/verViajes?wsUser=GEPP_CP&numProveedor=30-03-1161',
+			options
+		);
+		data = await response.json();
+	} catch (error) {
+		console.log('Error :' + error);
+		throw new Error('Ocurrió un error al consultar los viajes');
+	}
 
 	// Require the core node modules.
 	const crypto = require('crypto');
