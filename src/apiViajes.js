@@ -12,7 +12,7 @@ async function callApiViajes(endpoint, options = {}) {
 
 		const response = await fetch(
 			//'/DEV-WSCartaPorte/rest/service/verViajes?wsUser=GEPP_CP&numProveedor=30-03-1161',
-			'/WSCartaPorte/rest/service/verViajes?wsUser=GEPP_CP&numProveedor=30-03-1161',
+			'https://tr01.gepp.com/WSCartaPorte/rest/service/verViajes?wsUser=GEPP_CP&numProveedor=30-03-1161',
 			options
 		);
 		data = await response.json();
@@ -140,7 +140,7 @@ async function confirmar(encriptData, folio, options = {}) {
 	});
 
 	const response = await fetch(
-		'/WSCartaPorte/rest/service/recepcionCartaPorte',
+		'https://tr01.gepp.com/WSCartaPorte/rest/service/recepcionCartaPorte',
 		options
 	);
 	const data = await response.json();
