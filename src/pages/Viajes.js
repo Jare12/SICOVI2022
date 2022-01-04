@@ -16,7 +16,7 @@ const Viajes = () => {
 	const [data, setData] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
-	const [intervalId, setIntervalID] = useState();
+	//const [intervalId, setIntervalID] = useState();
 	const [storage, setStorage] = useLocalStorage('lsViajes', '');
 
 	const fetchData = async () => {
@@ -107,11 +107,11 @@ const Viajes = () => {
 
 	useEffect(() => {
 		fetchData();
-		const interv = setInterval(fetchData, 50000);
-		setIntervalID(interv);
-		return function cleanup() {
-			clearInterval(intervalId);
-		};
+		//const interv = setInterval(fetchData, 50000);
+		//setIntervalID(interv);
+		//return function cleanup() {
+		//	clearInterval(intervalId);
+		//};
 	}, []);
 
 	return (
